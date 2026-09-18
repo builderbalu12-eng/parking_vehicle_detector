@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Model weights: downloaded automatically on first run (~5 MB each)
+*.pt
+
+# Working output directory. Curated results live in examples/ instead.
+outputs/
+
+# Downloaded sample media: fetched with tools/fetch_samples.py
+data/input/*
+!data/input/.gitkeep
+!data/input/SOURCES.md
+
+# macOS
+.DS_Store

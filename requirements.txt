@@ -1,0 +1,15 @@
+# Core detection stack
+ultralytics>=8.3.0          # pre-trained YOLO11 models + ByteTrack tracker
+lap>=0.5.12                 # linear assignment solver ultralytics' tracker needs
+opencv-python>=4.10.0       # image/video I/O, drawing, polygon tests
+numpy>=1.26.0
+
+# Pulled in by ultralytics, pinned here so the stack is explicit
+torch>=2.2.0
+torchvision>=0.17.0
+
+# CLI + UI
+tqdm>=4.66.0                # video progress bar
+streamlit>=1.49.0           # optional web UI (app.py); 1.49 for width='stretch'
+pandas>=2.0.0               # results table + occupancy chart in the UI
+streamlit-image-coordinates>=0.4.1   # click-to-draw ROI polygons in the UI

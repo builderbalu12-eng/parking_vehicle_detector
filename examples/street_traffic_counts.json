@@ -1,0 +1,35 @@
+{
+  "source": "data/input/street_traffic.mp4",
+  "kind": "video",
+  "model": "yolo11n.pt",
+  "device": "mps",
+  "conf": 0.25,
+  "iou": 0.45,
+  "imgsz": 1248,
+  "tracking": true,
+  "min_track_hits": 3,
+  "stride": 1,
+  "roi": null,
+  "roi_rule": null,
+  "resolution": [
+    1226,
+    370
+  ],
+  "source_fps": 30.0,
+  "frames_processed": 498,
+  "processing_fps": 41.5,
+  "elapsed_seconds": 12.0,
+  "peak_occupancy": 15,
+  "peak_counts_by_class": {
+    "car": 15
+  },
+  "mean_occupancy": 8.12,
+  "unique_vehicles_total": 119,
+  "unique_vehicles_by_class": {
+    "car": 112,
+    "truck": 4,
+    "bus": 2,
+    "motorcycle": 1
+  },
+  "unique_track_ids_before_filter": 263
+}
